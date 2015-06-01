@@ -13,6 +13,7 @@
 		CE9EBEA01B1BF14600B69392 /* RGBWellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EBE9F1B1BF14600B69392 /* RGBWellTests.swift */; };
 		CE9EBEAB1B1BF1B300B69392 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EBEA91B1BF1B300B69392 /* MainWindowController.swift */; };
 		CE9EBEAC1B1BF1B300B69392 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9EBEAA1B1BF1B300B69392 /* MainWindowController.xib */; };
+		CE9EBEAE1B1C24C300B69392 /* RGBWellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EBEAD1B1C24C300B69392 /* RGBWellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CE9EBE9F1B1BF14600B69392 /* RGBWellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBWellTests.swift; sourceTree = "<group>"; };
 		CE9EBEA91B1BF1B300B69392 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		CE9EBEAA1B1BF1B300B69392 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		CE9EBEAD1B1C24C300B69392 /* RGBWellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBWellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				CE9EBE8C1B1BF14600B69392 /* Supporting Files */,
 				CE9EBEA91B1BF1B300B69392 /* MainWindowController.swift */,
 				CE9EBEAA1B1BF1B300B69392 /* MainWindowController.xib */,
+				CE9EBEAD1B1C24C300B69392 /* RGBWellModel.swift */,
 			);
 			path = RGBWell;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9EBEAE1B1C24C300B69392 /* RGBWellModel.swift in Sources */,
 				CE9EBEAB1B1BF1B300B69392 /* MainWindowController.swift in Sources */,
 				CE9EBE8F1B1BF14600B69392 /* AppDelegate.swift in Sources */,
 			);

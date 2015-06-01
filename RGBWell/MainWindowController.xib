@@ -6,11 +6,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RGBWell" customModuleProvider="target">
             <connections>
-                <outlet property="aSlider" destination="Sf5-06-VEw" id="nKT-bK-xFo"/>
-                <outlet property="bSlider" destination="Acz-Wm-btF" id="3Xm-73-MsK"/>
-                <outlet property="colorWell" destination="0YF-nP-TTB" id="fvJ-dB-Pbg"/>
-                <outlet property="gSlider" destination="zUM-ru-j8r" id="kgD-J7-HOB"/>
-                <outlet property="rSlider" destination="gca-HI-UnL" id="uWT-0r-aIX"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -29,7 +24,7 @@
                         <rect key="frame" x="312" y="217" width="150" height="21"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="hS1-Zx-Osr"/>
                         <connections>
-                            <action selector="adjustRed:" target="-2" id="8t8-mM-dJL"/>
+                            <binding destination="AaO-DT-e8P" name="value" keyPath="r" id="7ot-4E-Xf2"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-3b-xU1">
@@ -44,7 +39,7 @@
                         <rect key="frame" x="312" y="192" width="150" height="21"/>
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="WXr-Ke-FYi"/>
                         <connections>
-                            <action selector="adjustGreen:" target="-2" id="m34-zr-fKL"/>
+                            <binding destination="AaO-DT-e8P" name="value" keyPath="g" id="3qz-UN-BsY"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fw2-gi-9FD">
@@ -59,7 +54,7 @@
                         <rect key="frame" x="312" y="167" width="150" height="21"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="9tj-M9-V1Z"/>
                         <connections>
-                            <action selector="adjustBlue:" target="-2" id="4E2-LW-foO"/>
+                            <binding destination="AaO-DT-e8P" name="value" keyPath="b" id="jhT-x2-eks"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfK-uk-2S6">
@@ -73,12 +68,15 @@
                     <colorWell fixedFrame="YES" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YF-nP-TTB">
                         <rect key="frame" x="20" y="20" width="268" height="230"/>
                         <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <binding destination="AaO-DT-e8P" name="value" keyPath="newColor" id="wX9-BS-T2X"/>
+                        </connections>
                     </colorWell>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sf5-06-VEw">
                         <rect key="frame" x="312" y="142" width="150" height="21"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="0Kb-Gd-zgQ"/>
                         <connections>
-                            <action selector="adjustAlpha:" target="-2" id="sZj-u6-AOS"/>
+                            <binding destination="AaO-DT-e8P" name="value" keyPath="a" id="ick-0C-6Ey"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pyv-E2-70B">
@@ -95,5 +93,6 @@
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
         </window>
+        <customObject id="AaO-DT-e8P" customClass="RGBWellModel" customModule="RGBWell" customModuleProvider="target"/>
     </objects>
 </document>
