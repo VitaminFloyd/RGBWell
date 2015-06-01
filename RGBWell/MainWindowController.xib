@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RGBWell" customModuleProvider="target">
+            <connections>
+                <outlet property="aSlider" destination="Sf5-06-VEw" id="nKT-bK-xFo"/>
+                <outlet property="bSlider" destination="Acz-Wm-btF" id="3Xm-73-MsK"/>
+                <outlet property="colorWell" destination="0YF-nP-TTB" id="fvJ-dB-Pbg"/>
+                <outlet property="gSlider" destination="zUM-ru-j8r" id="kgD-J7-HOB"/>
+                <outlet property="rSlider" destination="gca-HI-UnL" id="uWT-0r-aIX"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gca-HI-UnL">
+                        <rect key="frame" x="312" y="217" width="150" height="21"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="hS1-Zx-Osr"/>
+                        <connections>
+                            <action selector="adjustRed:" target="-2" id="8t8-mM-dJL"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-3b-xU1">
+                        <rect key="frame" x="294" y="219" width="14" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="R" id="5qP-oe-hRy">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUM-ru-j8r">
+                        <rect key="frame" x="312" y="192" width="150" height="21"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="WXr-Ke-FYi"/>
+                        <connections>
+                            <action selector="adjustGreen:" target="-2" id="m34-zr-fKL"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fw2-gi-9FD">
+                        <rect key="frame" x="294" y="194" width="15" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="G" id="lmx-Xa-a2x">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Acz-Wm-btF">
+                        <rect key="frame" x="312" y="167" width="150" height="21"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="9tj-M9-V1Z"/>
+                        <connections>
+                            <action selector="adjustBlue:" target="-2" id="4E2-LW-foO"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfK-uk-2S6">
+                        <rect key="frame" x="294" y="169" width="14" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="B" id="UwQ-jT-rJu">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <colorWell fixedFrame="YES" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YF-nP-TTB">
+                        <rect key="frame" x="20" y="20" width="268" height="230"/>
+                        <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </colorWell>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sf5-06-VEw">
+                        <rect key="frame" x="312" y="142" width="150" height="21"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="0Kb-Gd-zgQ"/>
+                        <connections>
+                            <action selector="adjustAlpha:" target="-2" id="sZj-u6-AOS"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pyv-E2-70B">
+                        <rect key="frame" x="294" y="144" width="13" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="A" id="w5P-Gt-Vlb">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+</document>
